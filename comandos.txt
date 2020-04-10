@@ -1,0 +1,36 @@
+yarn init -- Iniciar aplicação
+
+instalar a dependencia "babel"
+yarn add @babel/cli
+
+instalar babel-preset-ev --Converte o codigo escrito para entendivel para navegadores que ainda não entendem es6
+yarn add @babel/preset-env
+
+instalar o babel Core
+yarn add @babel/core
+
+adicionar o gitignore
+node_modules
+
+// "dev": "babel ./main.js -o ./boundle.js -w" adicionar comando em scripts n package.json
+
+adicionando o webpack - adicionar varios arquivos js que sem tranformarão em um unico arquivo bundle.js
+yarn add webpack webpack-cli -D
+
+instalar babel loader -D para adicionar 
+yarn add babel-loader@8.0.0-beta.0 -D
+
+adicionar o comando em scripts no lugar de // "dev": "babel ./main.js -o ./boundle.js -w"
+"dev": "webpack --node=development -w"
+
+adicionar webpack-dev-server 
+yarn add webpack-dev-server -D
+
+adicionando biblioteca async await
+yarn add @babel/plugin-transform-async-to-generator -D
+
+yarn add @babel/polyfill -D
+
+
+instalar o axios
+yarn add axios
